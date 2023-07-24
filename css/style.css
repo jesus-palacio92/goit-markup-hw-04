@@ -17,6 +17,7 @@ body {
     font-weight: 400;
     letter-spacing: normal;
     font-style: normal;
+    width: 1600px;
 }
 
 * {
@@ -42,7 +43,7 @@ ul {
     padding-right: 15px;
 }
 
-.logo1 {
+.logo {
     color: #2196f3;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -57,7 +58,7 @@ ul {
 
 .navigation-link {
     display: flex;
-    width: 281px;
+    width: 251px;
     justify-content: space-between;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -80,31 +81,75 @@ ul {
 
 .contact {
     display: flex;
-    width: 303px;
-    justify-content: space-between;
+    width: 336px;
+    justify-content: right;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
 .list-contact-link {
-    color: #212121;
+    color: #757575;
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
     letter-spacing: 0.28px;
+    margin-right: 15px;
+}
+
+.icon-mail {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-cellphone {
+    width: 10px;
+    height: 16px;
+}
+
+/*.icon-container:hover .icon-mail,
+.icon-container:hover .icon-cellphone {
+    fill: #2196f3;
+    cursor: pointer;
+}*/
+
+.icon-container:hover {
+    fill: #2196f3;
+    cursor: pointer;
+}
+
+.icon-mail .icon-cellphone {
+    fill:#2196f3;
+    cursor: pointer;
 }
 
 a:is(:hover, :focus) {
     color: #2196f3;
 }
 
-/*  HEADER  */
+.navigation-link .link:hover {
+    color: #2196f3;
+    cursor: pointer;
+}
 
+.navigation-link .link:focus {
+    color: #2196f3;
+}
+
+/*  HEADER  */
 
 /*  MAIN  */
 
 .prime-title {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+        url(../images/layer-solution.jpg);
+    background-size: cover;
     background-color: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -171,6 +216,20 @@ a:is(:hover, :focus) {
     flex-basis: calc((100% - 90px) / 4);
 }
 
+.icon-box {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    align-items: center;
+    justify-content: center;
+}
+
+.values-img {
+    width: 70px;
+    height: 70px;
+}
+
 .values {
     color: #212121;
     font-size: 14px;
@@ -179,15 +238,20 @@ a:is(:hover, :focus) {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .values-qualification {
     color: #757575;
-    width: 270px;
+    max-width: 270px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+.section-images {
+    padding-bottom: 94px;
 }
 
 .h2-title {
@@ -208,6 +272,26 @@ a:is(:hover, :focus) {
 
 .images {
     flex-basis: calc((100% - 48px) / 3);
+}
+
+.cont-etiqueta {
+    background: rgba(47, 48, 58, 0.80);
+    position: absolute;
+    width: 373.99px;
+    height: 70px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 27px;
+    margin-top: -72px;
+    z-index: 1;
+}
+
+.etiqueta {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 .team {
@@ -242,7 +326,6 @@ a:is(:hover, :focus) {
 
 .name {
     font-size: 16px;
-    letter-spacing: 0.48px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -257,6 +340,90 @@ a:is(:hover, :focus) {
 .name-assignment {
     color: #757575;
     font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 32px 0px 32px;
+    padding: 0;
+}
+
+.lsocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+}
+
+.isocial {
+    width: 20px;
+    height: 20px;
+    border-width: 44px;
+}
+
+.gray {
+    display: flex;
+    gap: 32px;
+    padding: 0;
+}
+
+.lsocial:hover {
+    background-color: #2196f3;
+    cursor: pointer;
+}
+
+.lsocial:hover .isocial {
+    fill: #fff;
+    cursor: pointer;
+}
+.gray {
+    fill: #afb1b8;
+}
+
+
+.section-last {
+    padding-top: 59px;
+    padding-bottom: 145px;
+}
+
+.title-client {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 44px;
+}
+.ul-cr {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 44px;
+}
+
+.li-cr {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.li-cr:hover {
+    border-color: #2196f3;
+}
+
+.li-cr:hover .img-cr {
+    fill: #2196f3;
+    cursor: pointer;
+}
+
+.img-cr {
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
 }
 
 
@@ -268,22 +435,27 @@ a:is(:hover, :focus) {
     padding-bottom: 60px;
 }
 
-/*.list {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-}*/
+.logo1 {
+    margin-bottom: 9px;
+}
 
-.footer-contact-link {
+.container-ft {
     display: flex;
+    width: 1200px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.direction {
     color: #ffffff;
-    width: 231px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    margin-bottom: 6.25px;
 }
 
 .contact-link {
@@ -293,6 +465,64 @@ a:is(:hover, :focus) {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+
+.foot {
+margin-right: 70px;
+}
+
+.encuentrenos {
+display: block;
+}
+
+.title-en {
+    color: #fff;
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 700;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+
+.social-group {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.socialf {
+    width: 20px;
+    height: 20px;
+    border-width: 44px;
+    fill: #ffffff;
+}
+
+.lisocialf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    margin-left: 0px;
+}
+
+.lisocialf:hover {
+    background-color: #2196f3;
+    cursor: pointer;
+}
+
+.lin.active {
+    color: #2196f3;
+}
+
+.link:hover {
+    color: #2196f3;
+    cursor: pointer;
 }
 
 /* -------------*/
@@ -330,11 +560,11 @@ a:is(:hover, :focus) {
 .services-list { 
     display: flex;
     flex-wrap: wrap;
-    gap: 27px;
+    gap: 25px;
 }
 
 .grid {
-    flex-basis: calc((100% - 54px) / 3);
+    flex-basis: calc((100% - 50px) / 3);
 }
 
 .services-card {

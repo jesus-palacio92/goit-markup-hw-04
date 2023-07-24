@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto-estudio-tarea3</title>
+    <title>proyecto-estudio-tarea4</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="container-header">
-            <a href="/" class="logo1">WebStudio</a>
+            <a href="/" class="logo">WebStudio</a>
             <nav> 
                 <ul class="navigation-link"> 
                     <li><a class="active-link current" href="./index.html">estudio</a></li>
@@ -21,9 +21,13 @@
                     <li><a class="active-link" href="">contactos</a></li>
                 </ul>
             </nav>
-            <ul class="contact"> 
-                <li><a class="list-contact-link" href="mailto:info@dvstudio.com">info@dvstudio.com</a></li>
-                <li><a class="list-contact-link" href="tel:+525555296000">+52 55 5529 6000</a></li>
+            <ul class="contact">
+                <div class="icon-container">
+                    <svg class="icon-mail"><use href="./images/iconssvg/icons.svg#icon-mail"></use></svg>
+                        <li><a class="list-contact-link" href="mailto:info@dvstudio.com">info@dvstudio.com</a></li>
+                        <svg class="icon-cellphone"><use href="./images/iconssvg/icons.svg#icon-cellphone"></use></svg>
+                    <li><a class="list-contact-link" href="tel:+525555296000">+52 55 5529 6000</a></li>
+                </div>
             </ul>
         </div>
     </header>
@@ -40,12 +44,18 @@
             <div class="container">
                 <ul class="container-values">
                     <li class="item">
+                        <div class="icon-box">
+                            <svg class="icon values-img"><use href="./images/iconssvg/icons.svg#icon-antenna"></use></svg>
+                        </div>
                         <h3 class="values">ATENCION A LOS DETALLES</h3>
                         <p class="values-qualification">Nos adentramos en todos los detalles y procesos de su negocio,
                         para asi desarrollar una solucion a su medida.
                         </p>
                     </li>
                     <li class="item">
+                        <div class="icon-box">
+                            <svg class="icon values-img"><use href="./images/iconssvg/icons.svg#icon-clock"></use></svg>
+                        </div>
                         <h3 class="values">PUNTUALIDAD</h3>
                         <p class="values-qualification">Con nosotros usted puede sentirse
                         seguro y protegido. Un principio importante
@@ -54,6 +64,9 @@
                         </p>
                     </li>
                     <li class="item">
+                        <div class="icon-box">
+                            <svg class="icon values-img"><use href="./images/iconssvg/icons.svg#icon-computer"></use></svg>
+                        </div>
                         <h3 class="values">PLANIFICACION</h3>
                         <p class="values-qualification">Usted podra observar y participar en
                         cada fase del desarrollo y aplicacion
@@ -61,6 +74,9 @@
                         </p>
                     </li>
                     <li class="item">
+                        <div class="icon-box">
+                            <svg class="icon values-img"><use href="./images/iconssvg/icons.svg#icon-astronaut"></use></svg>
+                        </div>
                         <h3 class="values">TECNOLOGIA MODERNA</h3>
                         <p class="values-qualification">Usamos herramientas innovadoras para
                         resolver las tareas asignadas. Es hora
@@ -70,18 +86,27 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <section class="section-images">
             <div class="container">
                 <h2 class="h2-title">A qué nos dedicamos</h2>   
                 <ul class="images-set">
                     <li class="images">
-                        <img src="images/image-1.jpg" alt="persona teclado y tablet" width="374px" height="324px">
+                        <img src="images/image-1.jpg" alt="persona teclado y tablet" width="374px" height="294px">
+                        <div class="cont-etiqueta">
+                                <h4 class="etiqueta">aplicaciones de escritorio</h4>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/image-2.jpg" alt="persona celular computador" width="374px" height="324px">   
+                    <li class="images">
+                        <img src="images/image-2.jpg" alt="persona celular computador" width="374px" height="294px">
+                        <div class="cont-etiqueta">
+                                <h4 class="etiqueta">aplicaciones moviles</h4>
+                        </div>
                     </li>
-                    <li>
-                        <img src="images/image-3.jpg" alt="persona y tablet" width="374px height324px">    
+                    <li class="images">
+                        <img src="images/image-3.jpg" alt="persona y tablet" width="374px" height="294px">
+                        <div class="cont-etiqueta">
+                                <h4 class="etiqueta">soluciones de diseño</h4>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -91,50 +116,201 @@
                 <h2 class="title-partner">Nuestro equipo</h2>
                 <ul class="partner-list">
                     <li class="partner-card">
-                        <img class="partner-image" src="images/image-4.jpg" alt="foto Andres Cubo" width="270">
+                        <img class="partner-image" src="images/image-4.jpg" alt="foto Andres Cubo" width="270px" height="260px">
                         <div class="name">                
                             <h3 class="name-partner">Andres Cubo</h3>
                             <p class="name-assignment">Diseñador de producto</p>
+                            <ul class="social-media">
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="partner-card">
-                        <img class="partner-image" src="images/image-5.jpg" alt="foto Carla Palacios" width="270">
+                        <img class="partner-image" src="images/image-5.jpg" alt="foto Carla Palacios" width="270" height="260px">
                         <div class="name">
                             <h3 class="name-partner">Carla Palacios</h3>
                             <p class="name-assignment">Desarrolladora frontend</p>
+                            <ul class="social-media">
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="partner-card">
-                        <img class="partner-image" src="images/image-6.jpg" alt="foto Mario Dorado" width="270">
+                        <img class="partner-image" src="images/image-6.jpg" alt="foto Mario Dorado" width="270" height="260px">
                         <div class="name">
                             <h3 class="name-partner">Mario Dorado</h3>
                             <p class="name-assignment">Marketing</p>
+                            <ul class="social-media">
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="partner-card">
-                        <img class="partner-image" src="images/image-7.jpg" alt="foto Pablo Mijangos" width="270">
+                        <img class="partner-image" src="images/image-7.jpg" alt="foto Pablo Mijangos" width="270" height="260px">
                         <div class="name">
                             <h3 class="name-partner">Pablo Mijangos</h3>
                             <p class="name-assignment">Diseñador IU</p>
+                            <ul class="social-media">
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </li>
+                                <li class="lsocial">
+                                    <svg class="isocial gray">
+                                        <use href="./images/iconssvg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-last">
+            <div class="container">
+                <h2 class="title-client">Clientes Regulares</h2>
+                <ul class="ul-cr">
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer"></use>
+                        </svg>
+                    </li>
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer1"></use>
+                        </svg>
+                    </li>
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer2"></use>
+                        </svg>
+                    </li>
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer3"></use>
+                        </svg>
+                    </li>
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer4"></use>
+                        </svg>
+                    </li>
+                    <li class="li-cr">
+                        <svg class="img-cr gray">
+                            <use href="./images/iconssvg/icons.svg#icon-customer5"></use>
+                        </svg>
                     </li>
                 </ul>
             </div>
         </section>      
     </main>
     <footer class="container-footer">
-        <div class="container">
-            <a href="/" class="logo1">WebStudio</a>
-            <address>
-                <ul>
-                    <li><a class="footer-contact-link" href="#">Calz. Ticoman 500, Ciudad de Mexico, CDMX, Mexico</a>          
+        <div class="container-ft">
+            <div class="foot">
+                <a href="/" class="logo logo1">WebStudio</a>
+                <address class="direction">Calz. Ticoman 500, Ciudad de<br>Mexico, CDMX, Mexico</address>
+                <div>
+                    <ul class="contact-link">
+                        <li><a class="contact-link" href="mailto:info@dvstudio.com">info@dvstudio.com</a>
+                            </li>
+                        <li><a class="contact-link" href="tel:+525555296000">+52 55 5529 6000</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="encuentrenos">
+                <h3 class="title-en">encuentrenos en</h3>
+                <ul class="social-group">
+                    <li class="lisocialf">
+                        <svg class="socialf">
+                            <use href="./images/iconssvg/icons.svg#icon-instagram"></use>
+                        </svg>
                     </li>
-                    <li><a class="contact-link" href="mailto:info@dvstudio.com">info@dvstudio.com</a>
+                    <li class="lisocialf">
+                        <svg class="socialf">
+                            <use href="./images/iconssvg/icons.svg#icon-twitter"></use>
+                        </svg>
                     </li>
-                    <li><a class="contact-link" href="tel:+525555296000">+52 55 5529 6000</a>
+                    <li class="lisocialf">
+                        <svg class="socialf">
+                            <use href="./images/iconssvg/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="lisocialf">
+                        <svg class="socialf">
+                            <use href="./images/iconssvg/icons.svg#icon-linkedin"></use>
+                        </svg>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
