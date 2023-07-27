@@ -32,6 +32,34 @@ ul {
     padding: 0;
 }
 
+
+.img {
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+for all links
+a:link,
+a.visited {
+    text-decoration: none; 
+}
+ul li a {
+    color: #212121;
+    text-decoration: none;
+}*/
+
+for all pharagraph 
+p {
+    color: #757575;
+}
+
+.click-a {
+    padding-top:  32px;
+    padding-bottom: 32px;
+    cursor: pointer;
+}
+
 /* HEADER */
 
 .container-header {
@@ -112,12 +140,6 @@ ul {
     height: 16px;
 }
 
-/*.icon-container:hover .icon-mail,
-.icon-container:hover .icon-cellphone {
-    fill: #2196f3;
-    cursor: pointer;
-}*/
-
 .icon-container:hover {
     fill: #2196f3;
     cursor: pointer;
@@ -144,6 +166,17 @@ a:is(:hover, :focus) {
 /*  HEADER  */
 
 /*  MAIN  */
+
+.li-main {
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+
+.li-main:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.16), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 
 .prime-title {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -343,6 +376,13 @@ a:is(:hover, :focus) {
     margin-bottom: 16px;
 }
 
+.social-group .lisocialf:hover,
+.social-group .lisocialf:focus {
+    color: #2196f3;
+    cursor: pointer;
+}
+
+
 .social-media {
     display: flex;
     justify-content: space-between;
@@ -365,7 +405,7 @@ a:is(:hover, :focus) {
     border-width: 44px;
 }
 
-.gray {
+.link-address {
     display: flex;
     gap: 32px;
     padding: 0;
@@ -384,10 +424,34 @@ a:is(:hover, :focus) {
     fill: #afb1b8;
 }
 
+.icon-container:hover .lsocial,
+.icon-container:hover .social-media {
+    fill: #2196f3;
+    cursor: pointer;
+}
 
+* a:is(:hover, :focus) {
+    color: #2196f3;
+}
+
+.team :is(:hover, :focus) {
+    color: #2196f3;
+}
 .section-last {
     padding-top: 59px;
     padding-bottom: 145px;
+}
+
+.ul-cr .li-cr:hover,
+.ul-cr .li-cr:focus {
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.social-media .lsocial:hover,
+.social-media .lsocial:focus {
+    color: #2196f3;
+    cursor: pointer;
 }
 
 .title-client {
@@ -425,6 +489,13 @@ a:is(:hover, :focus) {
     height: 81px;
     padding: 14px 32px;
 }
+
+.contact-link-li .contact-link:hover,
+.contact-link-li .contact-link:focus {
+    color: #2196f3;
+    cursor: pointer;
+}
+
 
 
 /*  FOOTER */
